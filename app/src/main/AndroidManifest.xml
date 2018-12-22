@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.novate.usual">
+
+    <application
+        android:name=".test01.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--<activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <activity android:name=".test01.SecondActivity"/>
+
+
+        <!--<activity android:name=".test03.TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <!--<activity android:name=".test03.TestActivity"/>-->
+        <activity android:name=".test03.SerializeActivity"/>
+        <activity android:name=".test03.ParcelActivity"/>
+
+        <!--<activity android:name=".test04.TextViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+
+
+        <!--<activity android:name=".test05.viewgroup.MyLayoutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+
+        <activity android:name=".test_service.ServiceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".test_service.MyService"
+            android:process=":remote"
+            >
+                <intent-filter >
+                    <action android:name="com.novate.usual.test_service.aidl.MyAIDLService"/>
+                </intent-filter>
+
+            </service>
+    </application>
+
+</manifest>
